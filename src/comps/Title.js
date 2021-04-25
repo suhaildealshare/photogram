@@ -5,7 +5,10 @@ const Title = () => {
     <div className="title">
       <h1>PhotoGram</h1>
       <h2>Your Pictures</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>
+        You can upload your photograph. It is not for permanant storage, images
+        can be deleted any time.
+      </p>
     </div>
   );
 };

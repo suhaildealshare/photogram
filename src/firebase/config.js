@@ -6,6 +6,7 @@ import "firebase/firestore";
 var firebaseConfig = {
   apiKey: "AIzaSyCXe5IpPCqSsJI2vRxhzbbuDam4M_jzcmY",
   authDomain: "photogram-6b9ba.firebaseapp.com",
+  databaseURL: "https://photogram-6b9ba-default-rtdb.firebaseio.com",
   projectId: "photogram-6b9ba",
   storageBucket: "photogram-6b9ba.appspot.com",
   messagingSenderId: "273430999874",
@@ -16,5 +17,6 @@ firebase.initializeApp(firebaseConfig);
 
 const projectStorage = firebase.storage();
 const projectFirestore = firebase.firestore();
+const timeStamp = firebase.firestore.FieldValue.serverTimestamp;
 
-export { projectStorage, projectFirestore };
+export { projectStorage, projectFirestore, timeStamp };
